@@ -17,32 +17,25 @@ body, html {
     align-items: center;
 }
 
-p {
-    /* 수평 중앙 정렬하기 */
-    text-align: center;
-  }
-
 .title {
     font-size: 3em;
     font-weight: bold;
-    margin-bottom: 30px; /* 텍스트와 버튼 사이 간격 */
+    margin-bottom: 50px;
 }
-
-
 
 .button-container {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* 버튼 간격 */
+    gap: 20px;
 }
 
 .menu-button {
-    width: 200px; /* 버튼의 너비 */
-    padding: 15px; /* 버튼의 높이 */
+    width: 300px;
+    padding: 20px;
     background-color: #e0e0e0;
     border: none;
     border-radius: 5px;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -50,4 +43,85 @@ p {
 
 .menu-button:hover {
     background-color: #d0d0d0;
+}
+
+/* Research page styles */
+.research-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.data-box {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    background-color: #6b8f71;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.data-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+}
+
+.data-column.left, .data-column.right {
+    width: 25%;
+}
+
+.data-column.center {
+    width: 50%;
+}
+
+.data-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.data-main {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.arrow-down {
+    margin: 20px 0;
+    font-size: 2em;
+    color: #000;
+}
+
+.standard-text {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Vision page styles */
+.vision-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.vision-title {
+    font-size: 5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.vision-text {
+    font-size: 4.5em;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
 }
